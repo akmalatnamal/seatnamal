@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+</head>
+<body>
+  Username - Password
+  {% for val in user %}
+    {{ val[0] }} - {{ val[1] }}
+    <br>
+  {% endfor %}
+</body>
+</html>

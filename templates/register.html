@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    {% if err=='Password Error' %}
+        <h1>{{err}}, Please enter the same password</h1>
+    {% endif %}
+    <h1>Please Signup to create an account for this website:</h1>
+    <form method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name">
+        <br>
+        <label for="uname">Username</label>
+        <input type="text" name="uname">
+        <br>
+        <label for="pass">Password</label>
+        <input type="password" name="pass">
+        <br>
+        <label for="pass">Confirm Password</label>
+        <input type="password" name="cpass">
+        <br>
+        <label for="dob">Choose date of birth:</label>
+        <input type="date" name="dob">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

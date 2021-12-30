@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="icon" href="https://paperads.com/uploads/co_img/1597215693.png">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+                <span>
+                    <h1 class="text-center text-primary">Dashboard for {{ uname }} and id is {{ id }}</h1>
+                    <form action="{{ url_for('logout') }}">
+                        <input type="submit" class="btn btn-danger form-control-lg" value="Logout">
+                    </form>
+                    <form action="{{ url_for('formupload') }}">
+                        <label>Form</label>
+                        <input class="btn btn-primary" type="submit" value="Go to form.">
+                    </form>
+                </span>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+</html>
